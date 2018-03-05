@@ -4,7 +4,7 @@ program: wypisz.o main.o
 wypisz.o: wypisz.cpp hello.h
 	g++ -Wall wypisz.cpp -c -o wypisz.o
 
-main.o: main.cpp
+main.o: main.cpp hello.h
 	g++ -Wall main.cpp -c -o main.o
 
 clean:
